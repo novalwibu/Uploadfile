@@ -1,0 +1,184 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: #4C2B70;
+  color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  margin-right: auto;
+  margin-left: 10px;
+  transition: all .5s ease 0s;
+}
+
+.logo:hover {
+  color: #FF5338;
+  transform: rotate(2deg);
+}
+.btn-ota {
+  margin-right: 10px;
+  border: none;
+  padding: 6px 12px;
+  background: #5074FF;
+  
+}
+
+nav ul {
+  display: flex;
+  padding: 20px;
+}
+li {
+  list-style-type: none;
+  padding: 10px;
+}
+li a {
+  transition: all .5s ease 0s;
+  display: inline-block;
+}
+
+li a:hover{
+  color: #FF5338;
+  transform: rotate(2deg);
+}
+a {
+  color: #eaeaea;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.judul {
+  font-size: 25px;
+  font-weight: bold;
+}
+.disc {
+  font-size: 28px;
+  font-weight: bolder;
+}
+.foto {
+  max-width: 500px;
+  height: auto;
+}
+.paralax {
+  background-image: url('Foto/Dazai.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.tentang {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #4E4E4E;
+  color: #eaeaea;
+  padding: 20px;
+}
+
+.tes {
+  display: flex;
+  justify-content: center;
+  
+}
+.mt-10 {
+  display: flex;
+  align-items: center;
+  background: #5074FF;
+  margin-right: 10px;
+  border: none;
+  padding: 6px 12px;
+  size: 20px;
+}
+.card {
+  display: flex;
+  flex-wrap: warp;
+  justify-content: center;
+  align-items: column;
+  gap: 8px;
+}
+.card-item {
+  text-align: center;
+	width: 25%;
+	min-height: 200px;
+	max-height: 300px;
+	background: #f7f7f7;
+	color: #222;
+	padding: 24px;
+	box-shadow: 2px 5px 5px 1px rgba(0,0,0,0.5);
+}
+.card-judul {
+  font-size: 18px;
+  font-weight: bolder;
+}
+.card-disc {
+  font-size: 14px;
+  margin-top: 4px;
+}
+.icon {
+  width: 75px;
+	height: 75px;
+	margin: 10px;
+	padding: 4px;
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #4D51FF;
+  color: #eaeaea;
+}
+
+@media screen and (max-width: 500px) {
+	.card {
+		flex-direction: column;
+		gap: 0;
+	}
+	.card-item {
+		width: 100%;
+		opacity: 0.9;
+	}
+	
+	.container {
+		width: 100%;
+		padding: 0;
+	}
+	
+	.intro {
+		margin-top: 20px;
+	}
+	
+	.img-foto {
+		padding: 0;
+	}
+	
+	nav {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background: #1A2238;
+		z-index: 9;
+	}
+	
+	footer {
+		margin-bottom: 70px;
+		margin-top: 70px;
+	}
+}
