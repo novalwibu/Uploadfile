@@ -77,7 +77,7 @@ a {
   height: auto;
 }
 .paralax {
-  background-image: url('Foto/Dazai.png');
+  background-image: url('Dazai.png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
